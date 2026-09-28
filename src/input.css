@@ -1,0 +1,288 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ==========================================================================
+   THEME — change these variables to re-skin the entire site for a
+   different salon. Nothing below this block should contain a raw hex
+   value; everything reads from these tokens.
+   ========================================================================== */
+:root {
+  --color-primary: #920102;
+  --color-primary-light: #b8393a;
+  --color-primary-dark: #6e0101;
+
+  --color-secondary: #d7c1a7;
+  --color-secondary-light: #efe6d8;
+
+  --color-accent: #c68360;
+  --color-accent-dark: #a66647;
+
+  --color-surface: #faf7f2;
+  --color-surface-alt: #f1e9dd;
+  --color-ink: #2a2421;
+  --color-ink-soft: #6b5d52;
+
+  --shadow-soft: 0 12px 40px -18px rgba(42, 36, 33, 0.35);
+
+  /* RGB triplets of the same colors, used by Tailwind so utilities like
+     border-ink/10 or bg-primary/80 can apply opacity correctly. Keep
+     these in sync with the hex values above when re-theming. */
+  --color-primary-rgb: 146 1 2;
+  --color-primary-light-rgb: 184 57 58;
+  --color-primary-dark-rgb: 110 1 1;
+  --color-secondary-rgb: 215 193 167;
+  --color-secondary-light-rgb: 239 230 216;
+  --color-accent-rgb: 198 131 96;
+  --color-accent-dark-rgb: 166 102 71;
+  --color-surface-rgb: 250 247 242;
+  --color-surface-alt-rgb: 241 233 221;
+  --color-ink-rgb: 42 36 33;
+  --color-ink-soft-rgb: 107 93 82;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
+    }
+  }
+
+  body {
+    background-color: var(--color-surface);
+    color: var(--color-ink);
+    font-family: "Public Sans", system-ui, sans-serif;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    font-family: "Fraunces", serif;
+    letter-spacing: -0.01em;
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--color-primary);
+    outline-offset: 3px;
+  }
+}
+
+@layer components {
+  /* Section rhythm ------------------------------------------------------ */
+  .section {
+    padding-block: clamp(4rem, 8vw, 7rem);
+  }
+
+  .section-eyebrow {
+    color: var(--color-accent-dark);
+    font-size: 0.8125rem;
+    font-family: "Fraunces", serif;
+    font-style: italic;
+  }
+
+  .hairline {
+    height: 1px;
+    background: linear-gradient(
+      to right,
+      transparent,
+      var(--color-accent) 15%,
+      var(--color-accent) 85%,
+      transparent
+    );
+  }
+
+  /* Buttons --------------------------------------------------------------- */
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 0.85rem 1.75rem;
+    font-family: "Public Sans", sans-serif;
+    font-size: 0.9375rem;
+    font-weight: 600;
+    border-radius: 2px;
+    transition: transform 0.35s ease, background-color 0.35s ease, color 0.35s ease, border-color 0.35s ease;
+  }
+  .btn:hover {
+    transform: translateY(-1px);
+  }
+
+  .btn-primary {
+    background-color: var(--color-primary);
+    color: var(--color-surface);
+  }
+  .btn-primary:hover {
+    background-color: var(--color-primary-dark);
+  }
+
+  .btn-outline {
+    background-color: transparent;
+    color: var(--color-ink);
+    border: 1px solid var(--color-ink);
+  }
+  .btn-outline:hover {
+    border-color: var(--color-primary);
+    color: var(--color-primary);
+  }
+
+  /* Used for outline buttons that sit on a dark/primary-colored
+     background (e.g. inside the burgundy Bridal Packages / final CTA
+     sections) so text stays readable instead of blending in. */
+  .btn-outline-light {
+    background-color: transparent;
+    color: #ffffff;
+    border: 1px solid #ffffff;
+  }
+  .btn-outline-light:hover {
+    background-color: #ffffff;
+    color: var(--color-primary);
+  }
+
+  /* Nav --------------------------------------------------------------------- */
+  .site-nav {
+    transition: background-color 0.4s ease, box-shadow 0.4s ease, backdrop-filter 0.4s ease;
+  }
+  .site-nav.is-scrolled {
+    background-color: rgba(250, 247, 242, 0.92);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 1px 0 rgba(42, 36, 33, 0.08);
+  }
+
+  .nav-link {
+    position: relative;
+    color: inherit;
+  }
+  .nav-link::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    width: 100%;
+    height: 1px;
+    background-color: var(--color-accent);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s ease;
+  }
+  .nav-link:hover::after,
+  .nav-link:focus-visible::after {
+    transform: scaleX(1);
+  }
+
+  /* Reveal-on-scroll -------------------------------------------------------- */
+  .reveal {
+    opacity: 0;
+    transform: translateY(18px);
+    transition: opacity 0.7s ease, transform 0.7s ease;
+  }
+  .reveal.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  /* Editorial image frame ---------------------------------------------------- */
+  .frame {
+    position: relative;
+    overflow: hidden;
+  }
+  .frame img {
+    transition: transform 0.7s ease;
+  }
+  .frame:hover img {
+    transform: scale(1.04);
+  }
+
+  /* Placeholder imagery (swap for real photography) -------------------------- */
+  .placeholder-art {
+    background-image:
+      linear-gradient(135deg, rgba(146, 1, 2, 0.14), rgba(198, 131, 96, 0.14)),
+      repeating-linear-gradient(45deg, rgba(42, 36, 33, 0.05) 0, rgba(42, 36, 33, 0.05) 1px, transparent 1px, transparent 14px);
+    background-color: var(--color-secondary-light);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-ink-soft);
+    font-family: "Fraunces", serif;
+    font-style: italic;
+    text-align: center;
+    padding: 1rem;
+  }
+
+  /* Horizontal scroller (Bridal Portfolio) ------------------------------------ */
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+
+  .scroll-nav-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 2.75rem;
+    height: 2.75rem;
+    border-radius: 9999px;
+    background-color: rgba(250, 247, 242, 0.92);
+    border: 1px solid rgba(42, 36, 33, 0.12);
+    align-items: center;
+    justify-content: center;
+    box-shadow: var(--shadow-soft);
+    transition: background-color 0.3s ease;
+  }
+  .scroll-nav-btn:hover {
+    background-color: var(--color-surface);
+  }
+
+  /* Testimonial cards ---------------------------------------------------------- */
+  .review-avatar {
+    width: 2.75rem;
+    height: 2.75rem;
+    border-radius: 9999px;
+    background-color: var(--color-secondary-light);
+    color: var(--color-primary-dark);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Fraunces", serif;
+    font-style: italic;
+    font-size: 1.05rem;
+    flex-shrink: 0;
+  }
+
+  .review-stars svg {
+    width: 14px;
+    height: 14px;
+    fill: var(--color-accent-dark);
+  }
+
+  /* Lightbox ------------------------------------------------------------------ */
+  .lightbox {
+    position: fixed;
+    inset: 0;
+    z-index: 100;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(20, 15, 13, 0.92);
+    padding: 1.5rem;
+  }
+  .lightbox.is-open {
+    display: flex;
+  }
+
+}

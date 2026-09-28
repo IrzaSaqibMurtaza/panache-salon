@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Panache The Salon — Bridal Makeup, Hair &amp; Skincare in Peshawar</title>
+  <meta name="description" content="Panache The Salon in Peshawar: internationally certified bridal makeup, hair styling and skincare. Book your bridal appointment on WhatsApp." />
+  <link rel="canonical" href="https://www.panachethesalon.com/" />
+  <link rel="icon" href="assets/logo/favicon.png" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Panache The Salon — Bridal Makeup, Hair &amp; Skincare in Peshawar" />
+  <meta property="og:description" content="Internationally certified bridal makeup, hair styling and skincare in Peshawar. Book on WhatsApp." />
+  <meta property="og:image" content="assets/hero/hero-bridal.jpg" />
+  <meta property="og:url" content="https://www.panachethesalon.com/" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=Public+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/output.css" />
+</head>
+<body class="font-body bg-surface text-ink antialiased">
+
+  <a href="#main" class="sr-only focus:not-sr-only focus:absolute focus:z-50 focus:bg-primary focus:text-surface focus:px-4 focus:py-2">Skip to content</a>
+
+  <!-- ============================== NAVIGATION ============================== -->
+  <header id="site-nav" class="site-nav fixed top-0 inset-x-0 z-50">
+    <div class="max-w-7xl mx-auto px-6 lg:px-10 flex items-center justify-between h-20">
+      <a href="#home" class="flex items-center gap-2" data-logo data-logo-class="h-9 w-auto"></a>
+
+      <nav class="hidden lg:flex items-center gap-9 text-sm tracking-wideish" aria-label="Primary">
+        <a href="#home" class="nav-link">Home</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#services" class="nav-link">Services</a>
+        <a href="#bridal" class="nav-link">Bridal</a>
+        <a href="#gallery" class="nav-link">Gallery</a>
+        <a href="#reviews" class="nav-link">Reviews</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+
+      <a href="#" class="hidden lg:inline-flex btn btn-primary text-sm" data-wa-message="Hi, I'd like to book an appointment at {salon}.">
+        Book Appointment
+      </a>
+
+      <button id="nav-toggle" type="button" class="lg:hidden p-2 -mr-2" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+          <path d="M3 6h18M3 12h18M3 18h18" stroke-linecap="round" />
+        </svg>
+      </button>
+    </div>
+
+    <div id="mobile-menu" class="hidden flex-col lg:hidden bg-surface border-t border-ink/10 px-6 py-6 gap-5 text-base">
+      <a href="#home" class="nav-link">Home</a>
+      <a href="#about" class="nav-link">About</a>
+      <a href="#services" class="nav-link">Services</a>
+      <a href="#bridal" class="nav-link">Bridal</a>
+      <a href="#gallery" class="nav-link">Gallery</a>
+      <a href="#reviews" class="nav-link">Reviews</a>
+      <a href="#contact" class="nav-link">Contact</a>
+      <a href="#" class="btn btn-primary justify-center mt-2" data-wa-message="Hi, I'd like to book an appointment at {salon}.">Book Appointment</a>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- ============================== HERO ============================== -->
+    <section id="home" class="relative min-h-[92vh] lg:min-h-screen grid lg:grid-cols-2 pt-20 lg:pt-0">
+      <div class="pointer-events-none absolute inset-x-0 top-0 h-28 bg-gradient-to-b from-surface/90 via-surface/40 to-transparent z-10" aria-hidden="true"></div>
+      <div class="order-2 lg:order-1 flex items-center px-6 lg:px-16 py-14 lg:py-0">
+        <div class="max-w-xl">
+          <p class="section-eyebrow mb-5">Peshawar, Pakistan</p>
+          <h1 class="font-display text-5xl sm:text-6xl lg:text-[4.25rem] leading-[1.02] mb-6">
+            Panache<br /><span class="text-primary">The Salon</span>
+          </h1>
+          <p class="text-lg mb-3">Internationally certified for makeup, hair &amp; skincare.</p>
+          <p class="text-ink-soft mb-9 max-w-md">Refined bridal beauty, hair and skincare, with individualized attention for every client.</p>
+          <div class="flex flex-wrap items-center gap-4 mb-6">
+            <a href="#" class="btn btn-primary" data-wa-message="Hi, I'd like to book a bridal appointment at {salon}.">Book a Bridal Appointment</a>
+            <a href="#bridal" class="btn btn-outline">Explore Our Work</a>
+          </div>
+          <p class="text-sm text-accent-dark italic font-display" data-bind="business.bridalTravelNote"></p>
+        </div>
+      </div>
+      <div class="order-1 lg:order-2 frame aspect-[4/5] lg:aspect-auto lg:h-full">
+        <img id="hero-image" src="assets/hero/hero-bridal.jpg" alt="Bridal makeup and hair styling by Panache The Salon" class="w-full h-full object-cover" width="1200" height="1500" />
+      </div>
+    </section>
+
+    <!-- ============================== ABOUT ============================== -->
+    <section id="about" class="section">
+      <div class="max-w-7xl mx-auto px-6 lg:px-10 grid lg:grid-cols-2 gap-14 items-center">
+        <div class="reveal frame aspect-[4/3] order-2 lg:order-1">
+          <img id="about-image" src="assets/about/salon-interior.jpg" alt="Panache The Salon interior" class="w-full h-full object-cover" width="1200" height="900" />
+        </div>
+        <div class="reveal order-1 lg:order-2">
+          <p class="section-eyebrow mb-4">Our aim</p>
+          <h2 class="font-display text-4xl mb-6 leading-tight">International standards, given with individual care.</h2>
+          <p class="text-lg text-primary font-display italic mb-6 leading-snug">
+            "To provide international standard make up and hair services with individualized attention given to each and every client. We wish to give out the best!"
+          </p>
+          <p class="text-ink-soft max-w-prose leading-relaxed">
+            Every client at Panache is treated as an individual — not a template. That approach, paired with
+            internationally recognised training in makeup, hair and skincare, is what shapes each appointment,
+            from an everyday blow-dry to a full bridal look.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================== EXPERTISE ============================== -->
+    <section class="section bg-surface-alt">
+      <div class="max-w-7xl mx-auto px-6 lg:px-10">
+        <div class="max-w-xl mb-14 reveal">
+          <p class="section-eyebrow mb-4">Expertise &amp; training</p>
+          <h2 class="font-display text-4xl leading-tight">Trained across Pakistan, Dubai and France.</h2>
+        </div>
+        <div id="expertise-grid" class="grid sm:grid-cols-2 lg:grid-cols-3 gap-x-10 gap-y-10"></div>
+      </div>
+    </section>
+
+    <!-- ============================== SERVICES ============================== -->
+    <section id="services" class="section">
+      <div class="max-w-7xl mx-auto px-6 lg:px-10">
+        <div class="max-w-xl mb-14 reveal">
+          <p class="section-eyebrow mb-4">The menu</p>
+          <h2 class="font-display text-4xl leading-tight">Services</h2>
+          <p class="text-ink-soft mt-4">Every service below can be booked directly on WhatsApp.</p>
+        </div>
+        <div id="services-wrap" class="grid md:grid-cols-2 gap-x-16 gap-y-12"></div>
+      </div>
+    </section>
+
+    <!-- ============================== BRIDAL PACKAGES ============================== -->
+    <section id="bridal" class="section bg-primary text-surface">
+      <div class="max-w-7xl mx-auto px-6 lg:px-10">
+        <div class="max-w-xl mb-16 reveal">
+          <p class="section-eyebrow text-secondary mb-4">Bridal</p>
+          <h2 class="font-display text-4xl leading-tight">Bridal Packages</h2>
+          <p class="text-secondary-light mt-4 opacity-90">Inclusions below are configurable — confirm exact pricing and details on WhatsApp. <span data-bind="business.bridalTravelNote"></span></p>
+        </div>
+        <div id="packages-wrap"></div>
+      </div>
+    </section>
+
+    <!-- ============================== BRIDAL PORTFOLIO ============================== -->
+    <section class="section">
+      <div class="max-w-7xl mx-auto px-6 lg:px-10">
+        <div class="max-w-xl mb-14 reveal">
+          <p class="section-eyebrow mb-4">Real work</p>
+          <h2 class="font-display text-4xl leading-tight">The Bridal Portfolio</h2>
+          <p class="text-ink-soft mt-4">Explore selected bridal looks, makeup and styling.</p>
+        </div>
+        <div class="relative">
+          <div id="portfolio-grid" class="no-scrollbar flex gap-4 overflow-x-auto snap-x snap-mandatory scroll-smooth pb-2 -mx-6 px-6 lg:mx-0 lg:px-0"></div>
+          <button type="button" class="scroll-nav-btn hidden lg:flex -left-5" data-scroll-target="portfolio-grid" data-scroll-dir="-1" aria-label="Previous photo">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M15 6l-6 6 6 6" stroke-linecap="round" stroke-linejoin="round" /></svg>
+          </button>
+          <button type="button" class="scroll-nav-btn hidden lg:flex -right-5" data-scroll-target="portfolio-grid" data-scroll-dir="1" aria-label="Next photo">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 6l6 6-6 6" stroke-linecap="round" stroke-linejoin="round" /></svg>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================== GALLERY ============================== -->
+    <section id="gallery" class="section bg-surface-alt">
+      <div class="max-w-7xl mx-auto px-6 lg:px-10">
+        <div class="max-w-xl mb-14 reveal">
+          <p class="section-eyebrow mb-4">Gallery</p>
+          <h2 class="font-display text-4xl leading-tight">Makeup, hair &amp; skincare work</h2>
+        </div>
+        <div class="relative">
+          <div id="gallery-grid" class="no-scrollbar flex gap-4 overflow-x-auto snap-x snap-mandatory scroll-smooth pb-2 -mx-6 px-6 lg:mx-0 lg:px-0"></div>
+          <button type="button" class="scroll-nav-btn hidden lg:flex -left-5" data-scroll-target="gallery-grid" data-scroll-dir="-1" aria-label="Previous photo">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M15 6l-6 6 6 6" stroke-linecap="round" stroke-linejoin="round" /></svg>
+          </button>
+          <button type="button" class="scroll-nav-btn hidden lg:flex -right-5" data-scroll-target="gallery-grid" data-scroll-dir="1" aria-label="Next photo">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 6l6 6-6 6" stroke-linecap="round" stroke-linejoin="round" /></svg>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================== TESTIMONIALS ============================== -->
+    <section id="reviews" class="section">
+      <div class="max-w-7xl mx-auto px-6 lg:px-10">
+        <div class="max-w-xl mb-14 reveal mx-auto text-center">
+          <p class="section-eyebrow mb-4">Reviews</p>
+          <h2 class="font-display text-4xl leading-tight">What clients say</h2>
+        </div>
+        <div id="testimonials-wrap" class="grid md:grid-cols-3 gap-6"></div>
+      </div>
+    </section>
+
+    <!-- ============================== INSTAGRAM ============================== -->
+    <section class="section bg-surface-alt">
+      <div class="max-w-7xl mx-auto px-6 lg:px-10 text-center">
+        <p class="section-eyebrow mb-4">Follow along</p>
+        <h2 class="font-display text-4xl leading-tight mb-4">On Instagram</h2>
+        <p class="text-ink-soft mb-8 max-w-md mx-auto">For our latest bridal work and behind-the-scenes, follow Panache on Instagram.</p>
+        <a data-href="social.instagram" href="#" target="_blank" rel="noopener" class="btn btn-outline">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true">
+            <rect x="3" y="3" width="18" height="18" rx="5" /><circle cx="12" cy="12" r="4" /><circle cx="17.2" cy="6.8" r="0.6" fill="currentColor" />
+          </svg>
+          @panachepeshawar
+        </a>
+      </div>
+    </section>
+
+    <!-- ============================== LOCATION / CONTACT ============================== -->
+    <section id="contact" class="section">
+      <div class="max-w-7xl mx-auto px-6 lg:px-10 grid lg:grid-cols-2 gap-14">
+        <div class="reveal">
+          <p class="section-eyebrow mb-4">Visit</p>
+          <h2 class="font-display text-4xl leading-tight mb-8">Location &amp; Hours</h2>
+
+          <address class="not-italic text-lg mb-8 leading-relaxed">
+            Panache The Salon<br />
+            19 A/C Gulmohar Lane<br />
+            University Town<br />
+            Peshawar, Pakistan 25000
+          </address>
+
+          <div class="flex flex-wrap gap-4 mb-10">
+            <a href="tel:+923218588811" class="btn btn-outline text-sm">Call 0321 8588811</a>
+            <a href="#" class="btn btn-primary text-sm" data-wa-message="Hi, I'd like to inquire at {salon}.">WhatsApp</a>
+            <a data-href="social.facebook" href="#" target="_blank" rel="noopener" class="btn btn-outline text-sm">Facebook</a>
+          </div>
+
+          <h3 class="font-display text-xl mb-3">Opening Hours</h3>
+          <ul id="hours-list" class="max-w-sm text-sm"></ul>
+        </div>
+
+        <div class="reveal frame aspect-[4/3] lg:aspect-auto lg:h-full">
+          <iframe
+            title="Panache The Salon location map"
+            class="w-full h-full min-h-[320px] border-0"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            src="https://www.google.com/maps?q=19%20A%2FC%20Gulmohar%20Lane%2C%20University%20Town%2C%20Peshawar%2C%20Pakistan%2025000&output=embed">
+          </iframe>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================== FINAL CTA ============================== -->
+    <section class="section bg-primary text-surface text-center">
+      <div class="max-w-2xl mx-auto px-6">
+        <h2 class="font-display text-4xl leading-tight mb-5">Ready for your appointment?</h2>
+        <p class="text-secondary-light opacity-90 mb-3">Message us on WhatsApp and we'll help you choose the right service or bridal package.</p>
+        <p class="text-secondary mb-9 italic font-display" data-bind="business.bridalTravelNote"></p>
+        <a href="#" class="btn btn-outline-light" data-wa-message="Hi, I'd like to book an appointment at {salon}.">Book on WhatsApp</a>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============================== FOOTER ============================== -->
+  <footer class="bg-ink text-surface/80 pb-10">
+    <div class="max-w-7xl mx-auto px-6 lg:px-10 py-14 grid sm:grid-cols-3 gap-10 text-sm">
+      <div>
+        <div data-logo data-logo-class="h-8 w-auto mb-4" class="text-surface mb-4"></div>
+        <p class="opacity-70 leading-relaxed">Internationally certified bridal makeup, hair &amp; skincare in Peshawar.</p>
+      </div>
+      <div>
+        <h4 class="font-display text-base mb-3 text-surface">Explore</h4>
+        <ul class="space-y-2 opacity-80">
+          <li><a href="#about" class="hover:text-secondary">About</a></li>
+          <li><a href="#services" class="hover:text-secondary">Services</a></li>
+          <li><a href="#bridal" class="hover:text-secondary">Bridal Packages</a></li>
+          <li><a href="#gallery" class="hover:text-secondary">Gallery</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="font-display text-base mb-3 text-surface">Contact</h4>
+        <ul class="space-y-2 opacity-80">
+          <li><a href="tel:+923218588811" class="hover:text-secondary">0321 8588811</a></li>
+          <li><a data-href="social.instagram" href="#" target="_blank" rel="noopener" class="hover:text-secondary">Instagram</a></li>
+          <li><a data-href="social.facebook" href="#" target="_blank" rel="noopener" class="hover:text-secondary">Facebook</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="border-t border-surface/10 py-6 text-center text-xs opacity-60">
+      © <span id="year"></span> Panache The Salon. All rights reserved.
+    </div>
+  </footer>
+
+  <!-- ============================== LIGHTBOX ============================== -->
+  <div id="lightbox" class="lightbox">
+    <button id="lightbox-close" type="button" class="absolute top-5 right-5 text-surface/80 hover:text-surface" aria-label="Close">
+      <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M6 6l12 12M18 6L6 18" stroke-linecap="round" /></svg>
+    </button>
+    <button id="lightbox-prev" type="button" class="absolute left-4 top-1/2 -translate-y-1/2 text-surface/80 hover:text-surface" aria-label="Previous image">
+      <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M15 6l-6 6 6 6" stroke-linecap="round" stroke-linejoin="round" /></svg>
+    </button>
+    <img id="lightbox-image" src="" alt="" class="max-h-[85vh] max-w-[90vw] object-contain" />
+    <button id="lightbox-next" type="button" class="absolute right-4 top-1/2 -translate-y-1/2 text-surface/80 hover:text-surface" aria-label="Next image">
+      <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 6l6 6-6 6" stroke-linecap="round" stroke-linejoin="round" /></svg>
+    </button>
+  </div>
+
+  <script src="data/salon-config.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>

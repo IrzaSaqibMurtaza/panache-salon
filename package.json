@@ -1,0 +1,13 @@
+{
+  "name": "salon-website-template",
+  "version": "1.0.0",
+  "description": "Reusable static salon website template (currently configured for Panache The Salon)",
+  "private": true,
+  "scripts": {
+    "dev": "tailwindcss -i ./src/input.css -o ./css/output.css --watch",
+    "build": "tailwindcss -i ./src/input.css -o ./css/output.css --minify"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.4.13"
+  }
+}
