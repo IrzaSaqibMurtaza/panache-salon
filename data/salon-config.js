@@ -94,52 +94,100 @@ window.SALON_CONFIG = {
     {
       category: "Bridal",
       services: [
-        { name: "Bridal Makeup", description: "Full bridal look, tailored to your features and outfit.", priceType: "contact" },
-        { name: "Bridal Hair Styling", description: "Classic or contemporary bridal hairstyling.", priceType: "contact" }
+        {
+          name: "Bridal Makeup",
+          description: "Full bridal look, tailored to your features and outfit.",
+          priceType: "contact"
+        },
+        {
+          name: "Bridal Hair Styling",
+          description: "Classic or contemporary bridal hairstyling.",
+          priceType: "contact"
+        }
       ]
     },
     {
       category: "Party Makeup",
       services: [
-        { name: "Party Makeup", description: "Event-ready makeup for guests and celebrations.", priceType: "starting", price: "Rs. 5,000" }
+        {
+          name: "Party Makeup",
+          description: "Event-ready makeup for guests and celebrations.",
+          priceType: "starting",
+          price: "Rs. 5,000"
+        }
       ]
     },
     {
       category: "Mehndi",
       services: [
-        { name: "Mehndi Makeup", description: "Soft, radiant makeup for mehndi celebrations.", priceType: "contact" }
+        {
+          name: "Mehndi Makeup",
+          description: "Soft, radiant makeup for mehndi celebrations.",
+          priceType: "contact"
+        }
       ]
     },
     {
       category: "Walima",
       services: [
-        { name: "Walima Makeup", description: "Elegant, camera-ready makeup for the walima.", priceType: "contact" }
+        {
+          name: "Walima Makeup",
+          description: "Elegant, camera-ready makeup for the walima.",
+          priceType: "contact"
+        }
       ]
     },
     {
       category: "Hair",
       services: [
-        { name: "Blow Dry & Styling", description: "Wash, blow dry and finish.", priceType: "starting", price: "Rs. 2,000" },
-        { name: "Hair Colour", description: "Permanent, semi and demi colour, ombré and sombré.", priceType: "contact" }
+        {
+          name: "Blow Dry & Styling",
+          description: "Wash, blow dry and finish.",
+          priceType: "starting",
+          price: "Rs. 2,000"
+        },
+        {
+          name: "Hair Colour",
+          description: "Permanent, semi and demi colour, ombré and sombré.",
+          priceType: "contact"
+        }
       ]
     },
     {
       category: "Hair Treatments",
       services: [
-        { name: "Keratin Treatment", description: "Smoothing keratin treatment.", priceType: "contact" },
-        { name: "X-Tenso", description: "L'Oréal X-Tenso straightening.", priceType: "contact" }
+        {
+          name: "Keratin Treatment",
+          description: "Smoothing keratin treatment.",
+          priceType: "contact"
+        },
+        {
+          name: "X-Tenso",
+          description: "L'Oréal X-Tenso straightening.",
+          priceType: "contact"
+        }
       ]
     },
     {
       category: "Facials & Skincare",
       services: [
-        { name: "Signature Facial", description: "Deep-cleansing facial for a refreshed complexion.", priceType: "starting", price: "Rs. 3,500" }
+        {
+          name: "Signature Facial",
+          description: "Deep-cleansing facial for a refreshed complexion.",
+          priceType: "starting",
+          price: "Rs. 3,500"
+        }
       ]
     },
     {
       category: "Waxing",
       services: [
-        { name: "Full Arms & Legs", description: "Smooth, long-lasting wax finish.", priceType: "starting", price: "Rs. 2,500" }
+        {
+          name: "Full Arms & Legs",
+          description: "Smooth, long-lasting wax finish.",
+          priceType: "starting",
+          price: "Rs. 2,500"
+        }
       ]
     }
   ],
@@ -153,7 +201,7 @@ window.SALON_CONFIG = {
       description: "A complete bridal look — makeup, hair and draping.",
       includes: ["Bridal makeup", "Hair styling", "Draping assistance"],
       priceType: "contact",
-      image: "assets/bridal/bridal-package.jpg",
+      image: "assets/bridal/bridal-package.webp",
       isPlaceholder: true
     },
     {
@@ -161,7 +209,7 @@ window.SALON_CONFIG = {
       description: "Refined, camera-ready styling for the walima.",
       includes: ["Walima makeup", "Hair styling"],
       priceType: "contact",
-      image: "assets/bridal/walima-package.jpg",
+      image: "assets/bridal/walima-package.webp",
       isPlaceholder: true
     },
     {
@@ -169,7 +217,7 @@ window.SALON_CONFIG = {
       description: "Soft, festive styling for the mehndi.",
       includes: ["Mehndi makeup", "Hair styling"],
       priceType: "contact",
-      image: "assets/bridal/mehndi-package.jpg",
+      image: "assets/bridal/mehndi-package.webp",
       isPlaceholder: true
     }
   ],
@@ -178,26 +226,90 @@ window.SALON_CONFIG = {
   // appear automatically. Add or remove entries as needed; each just needs
   // { src, alt, category }.
   bridalPortfolio: [
-    { src: "assets/bridal/portfolio-1.jpg", alt: "Bridal makeup look", category: "Bridal Makeup" },
-    { src: "assets/bridal/portfolio-2.jpg", alt: "Bridal makeup look", category: "Bridal Makeup" },
-    { src: "assets/bridal/portfolio-3.jpg", alt: "Walima look", category: "Walima" },
-    { src: "assets/bridal/portfolio-4.jpg", alt: "Walima look", category: "Walima" },
-    { src: "assets/bridal/portfolio-5.jpg", alt: "Mehndi look", category: "Mehndi" },
-    { src: "assets/bridal/portfolio-6.jpg", alt: "Bridal hair styling", category: "Hair Styling" },
-    { src: "assets/bridal/portfolio-7.jpg", alt: "Bridal hair styling", category: "Hair Styling" },
-    { src: "assets/bridal/portfolio-8.jpg", alt: "Before and after bridal transformation", category: "Before & After" }
+    {
+      src: "assets/bridal/portfolio-1.webp",
+      alt: "Bridal makeup look",
+      category: "Bridal Makeup"
+    },
+    {
+      src: "assets/bridal/portfolio-2.webp",
+      alt: "Bridal makeup look",
+      category: "Bridal Makeup"
+    },
+    {
+      src: "assets/bridal/portfolio-3.webp",
+      alt: "Walima look",
+      category: "Walima"
+    },
+    {
+      src: "assets/bridal/portfolio-4.webp",
+      alt: "Walima look",
+      category: "Walima"
+    },
+    {
+      src: "assets/bridal/portfolio-5.webp",
+      alt: "Mehndi look",
+      category: "Mehndi"
+    },
+    {
+      src: "assets/bridal/portfolio-6.webp",
+      alt: "Bridal hair styling",
+      category: "Hair Styling"
+    },
+    {
+      src: "assets/bridal/portfolio-7.webp",
+      alt: "Bridal hair styling",
+      category: "Hair Styling"
+    },
+    {
+      src: "assets/bridal/portfolio-8.webp",
+      alt: "Before and after bridal transformation",
+      category: "Before & After"
+    }
   ],
 
   // Same pattern for the general gallery — drop files into /assets/gallery/.
   gallery: [
-    { src: "assets/gallery/gallery-1.jpg", alt: "Makeup work", category: "Makeup" },
-    { src: "assets/gallery/gallery-2.jpg", alt: "Hair styling work", category: "Hair" },
-    { src: "assets/gallery/gallery-3.jpg", alt: "Skincare treatment", category: "Skincare" },
-    { src: "assets/gallery/gallery-4.jpg", alt: "Salon interior", category: "Interior" },
-    { src: "assets/gallery/gallery-5.jpg", alt: "Bridal work", category: "Bridal" },
-    { src: "assets/gallery/gallery-6.jpg", alt: "Before and after", category: "Before & After" },
-    { src: "assets/gallery/gallery-7.jpg", alt: "Makeup work", category: "Makeup" },
-    { src: "assets/gallery/gallery-8.jpg", alt: "Hair styling work", category: "Hair" }
+    {
+      src: "assets/gallery/gallery-1.webp",
+      alt: "Makeup work",
+      category: "Makeup"
+    },
+    {
+      src: "assets/gallery/gallery-2.webp",
+      alt: "Hair styling work",
+      category: "Hair"
+    },
+    {
+      src: "assets/gallery/gallery-3.webp",
+      alt: "Skincare treatment",
+      category: "Skincare"
+    },
+    {
+      src: "assets/gallery/gallery-4.webp",
+      alt: "Salon interior",
+      category: "Interior"
+    },
+    {
+      src: "assets/gallery/gallery-5.webp",
+      alt: "Bridal work",
+      category: "Bridal"
+    },
+    {
+      src: "assets/gallery/gallery-6.webp",
+      alt: "Before and after",
+      category: "Before & After"
+    },
+    {
+      src: "assets/gallery/gallery-7.webp",
+      alt: "Makeup work",
+      category: "Makeup"
+    },
+    {
+      src: "assets/gallery/gallery-8.webp",
+      alt: "Hair styling work",
+      category: "Hair"
+    }
   ],
 
   // Real testimonials, as supplied — do not replace with invented quotes.
@@ -257,5 +369,6 @@ window.SALON_CONFIG = {
       text: "Loved their makeup and services. Staff is very cooperative 😍"
     }
   ],
+
   googleReviewsUrl: ""
 };
